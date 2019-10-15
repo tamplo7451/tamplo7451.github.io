@@ -1,0 +1,172 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+.box{
+    position: relative;
+    width: 900px;
+    height: 600px;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.sea{
+    bottom: 0;
+    position: absolute;
+    height:250px;
+    width: 100%;
+    background: cornflowerblue;
+}
+
+.concent{
+    top:10px;
+    position: relative;
+    width: 100px;
+    height: 140px;
+    background: rgb(167, 83, 5);
+    animation: move1 10s infinite linear;
+    transform-style: preserve-3d;
+}
+
+@keyframes move1{
+    0% {left:-200px; transform: rotateY(0deg)}
+    50% {left:1000px; transform: rotateY(0deg)}
+    51%{ transform: rotateY(180deg);left: 1000px;}
+    99%{left:-200px;transform: rotateY(180deg);}   
+    100%{left:-200px}
+}
+.wukong{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.wukong-head{
+    position: absolute;
+    top:0px;
+    width: 100%;
+    height: 30px;
+    background:yellow
+}
+.wukong-jingu{
+    position: absolute;
+    top:20px;
+    width: 100%;
+    height:10px;
+    background: rgb(236, 143, 4);
+}
+.wukong-face{
+    position: absolute;
+    top:30px;
+    height: 30px;
+    width: 60%;
+    background: red;
+    right:0px;
+}
+.wukong-eyes{
+    position: relative;
+    top: 5px;
+    left:80%;
+    height: 20px;
+    width: 5px;
+    background: black;
+}
+.jindouyun{
+    position: absolute;
+    top:80px;
+    left:-55px;
+    height: 70px;
+    width: 180px;
+    border-radius: 70px;
+    background-color: darkorange;
+}
+.wukong-body{
+    position: absolute;
+    top:55px;
+    height: 30px;
+    width: 100%;
+    background: rgb(255, 217, 0);
+}
+.jingubang-left{
+    height: 100%;
+    width: 15%;
+    background: yellow;
+}
+.jingubang-right{
+    height: 100%;
+    width: 15%;
+    background: yellow;
+}
+.jingubang{
+    position: absolute;
+    top: 60px;
+    left: -69px;
+    height: 10px;
+    width: 180px;
+    background: darkred;
+    animation: move2 6s infinite linear;
+    display: flex;
+    justify-content: space-between;
+}
+@keyframes move2{
+    0% { transform: rotate3d(1,0,0,0deg);}
+    100%{ transform: rotate3d(0,0,1,3600deg);}
+}
+.yun1{
+    position: absolute;
+    height: 80px;
+    width: 200px;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+    transform-style: preserve-3d;
+    animation: move3 15s infinite; 
+}
+@keyframes move3{
+    0% {left:0px;}
+    100% {left:800px;}
+
+}
+.yun1-1{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: -50px;
+    left: 60px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+    border-radius: 50%;
+    transform: rotateX(-10deg)
+
+}
+
+.yun2{
+    z-index:-1;
+    position: absolute;
+    top: 40px;
+    height: 80px;
+    width: 200px;
+    background: #fff;
+    border-radius: 50px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+    transform-style: preserve-3d;
+    animation: move4 20s infinite; 
+}
+@keyframes move4{
+    0% {left:1000px;}
+    100% {left:-200px;}
+
+}
+.yun2-1{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: -50px;
+    left: 40px;
+    background: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+    border-radius: 50%;
+    transform: rotateX(-10deg);
+}
