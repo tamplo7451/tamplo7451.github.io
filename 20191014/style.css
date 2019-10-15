@@ -10,7 +10,7 @@
     background: #f9f9f9;
 
 }
-/* .box1-1{
+.box1-1{
     position: absolute;
     left:200px;
     top:100px;
@@ -28,14 +28,14 @@
     background-color: palegreen;
     transform: rotateX(20deg);
     opacity: .6;
-} */
+}
 
 
 /* 立方体 */
 .cube{
     position: relative;
     margin-top: 200px;
-    margin-left:100px;
+    margin-left:800px;
     width: 200px;
     height: 200px;
     transform: rotateX(-30deg) rotateY(-60deg) ;
